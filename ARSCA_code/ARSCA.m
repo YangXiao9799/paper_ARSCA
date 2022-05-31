@@ -72,13 +72,10 @@ while FEs<Max_iteration
             Destination_fitness=Objective_values(1,i);
         end
     end
-    %% enhanced
-        %% sort
-        [Objective_values,SortOrder]=sort(Objective_values);
-        for i=1:N
-            X(i,:)=X(SortOrder(i),:);
-        end
-    %% enhanced end
+    [Objective_values,SortOrder]=sort(Objective_values);
+    for i=1:N
+        X(i,:)=X(SortOrder(i),:);
+    end
     wMax=0.7;
     wMin=0.2;
     w=wMax-FEs*((wMax-wMin)/Max_iteration);
