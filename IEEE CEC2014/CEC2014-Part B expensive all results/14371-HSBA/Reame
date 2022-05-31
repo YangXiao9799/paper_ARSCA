@@ -1,0 +1,7 @@
+The data corresponds to the following paper in CEC 2014 Special Session and Competition on Single Objective Real-Parameter Numerical Optimization: Hemant Kumar Singh, Amitay Isaacs and Tapabrata Ray, "A Hybrid Surrogate Based Algorithm (HSBA) to Solve
+Computationally Expensive Optimization Problems". 
+
+The enclosed files contain median and mean values after 0.1*MaxFE, 0.2*MaxFE.... MaxFE evaluations for each problem (First Row contains median values, second row contains mean values)
+
+Please note : Since the algorithm does not output objective values after regular intervals, the function values at the given function evaluations are interpolated values from the nearest function evaluation result available. 
+
